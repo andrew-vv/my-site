@@ -85,12 +85,12 @@
  
 
   .tablet-element {
-    display: none;
+    display: none !important;;
 
   }
 
   .desktop-element {
-    display: none;
+    display: none !important;;
   } 
   .mobile-element {
     display: block;
@@ -584,7 +584,6 @@ transition: var(--animation-transition);
 .experience-text {
   color: var(--txt-c-light);
   margin: 0;
-  font-weight: normal;
   font-size: 16px;
   line-height: 19px;
 }
@@ -592,7 +591,6 @@ transition: var(--animation-transition);
 .experience-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   
 }
 
@@ -1092,7 +1090,7 @@ margin: 0;
     margin-bottom: 30px;
     font-size: 55px;
     line-height: 66px;
-    width: 410px;
+    /* width: 410px; */
     
   }
   .profession-part1 {
@@ -1293,11 +1291,11 @@ margin: 0;
     max-width: var(--desktop-lg);
   }
   .tablet-element {
-    display: none;
+    display: none  !important;
   }
 
   .desktop-element {
-    display: block;
+    display: block  !important;
   }
 
   .front-page-my-info {
@@ -1327,7 +1325,7 @@ margin: 0;
   order: 2;
   z-index: 2;
   position: relative;
-  width: 387px;
+  /* width: 387px; */
 }
 
 .front-page-my-photo {
@@ -1425,7 +1423,7 @@ z-index: 2;
 }
 
 
-} 
+
 .mobile-menu-item:last-child {
   margin-right: 0;
 }
@@ -1435,9 +1433,9 @@ z-index: 2;
 }
 
 .about-title {
-  font-size: 70px;
+  /* font-size: 70px;
   line-height: 84px;
-  width: 620px;
+  width: 620px;  */
   margin-top: 0;
 }
 
@@ -1451,6 +1449,7 @@ z-index: 2;
 
 .about-content-wrapper {
   position: relative;
+  
 }
 
 .about .container {
@@ -1562,7 +1561,7 @@ justify-content: center;
   z-index: 2;
 }
 .calculator-icon {
-  position: absolute;
+  
     
     top: 445px;
   }
@@ -1590,6 +1589,25 @@ justify-content: center;
 }
 .project-modal-container {
   padding: 95px;
+}
+.mobile-menu-items {
+  flex-direction: row;
+}
+.mobile-menu-item {
+  margin-right: 35px;
+  margin-bottom: 0;
+}
+
+.mobile-menu-item:last-child {
+  margin-right: 0;
+}
+
+.front-page-main-info {
+  width: 387px;
+}
+
+.mobile-menu-items {
+  margin-left: 120px;
 }
    
 } 
